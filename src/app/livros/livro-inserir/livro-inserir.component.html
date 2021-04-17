@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-form-field>
+    <input type="text" matInput placeholder="ID" [(ngModel)]="id" />
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Título" [(ngModel)]="titulo" />
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Autor" [(ngModel)]="autor" />
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Páginas" [(ngModel)]="paginas" />
+  </mat-form-field>
+  <br />
+  <button mat-raised-button color="warn" (click)="onAdicionarLivro()">
+    Inserir Livro
+  </button>
+</mat-card>
