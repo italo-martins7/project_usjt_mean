@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,6 +14,7 @@ import { LivroInserirComponent } from './livros/livro-inserir/livro-inserir.comp
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { LivroListaComponent } from './livros/livro-lista/livro-lista.component';
 
+import { LivroService } from './livros/livro.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { LivroListaComponent } from './livros/livro-lista/livro-lista.component'
     MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [LivroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
